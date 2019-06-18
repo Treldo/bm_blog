@@ -5,6 +5,7 @@ layout: default
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
+[Web_Index](./_posts/2019-06-17-web_index.md).
 
 There should be whitespace between paragraphs.
 
