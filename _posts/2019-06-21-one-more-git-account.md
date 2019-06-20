@@ -3,14 +3,14 @@ layout: default
 title: 同一客户端下使用多个 git 账号
 ---
 
-#### 清除git的全局设置
+### 清除git的全局设置
 
 ``` shell
 git config --global --unset user.name
 git config --global --unset user.email
 ```
 
-#### 生成新站好的SSH keys
+### 生成新站好的SSH keys
 
 **1. 用ssh-keygen命令生成一组新的id_rsa_new和id_rsa_new.pub**
 
@@ -71,11 +71,12 @@ $ ssh -T git@xxxxxx.com
 Welcome to GitLab, xxx!  
 ```
 
-链接：[https://www.jianshu.com/p/89cb26e5c3e8]
-来源：简书
+链接：<https://www.jianshu.com/p/89cb26e5c3e8/>
 
-### 参考资料
+来源:：简书
 
-[https://blog.csdn.net/onTheRoadToMine/article/details/79029331]
+## 参考资料
 
-[https://gist.github.com/suziewong/4378434]
+<https://blog.csdn.net/onTheRoadToMine/article/details/79029331/>
+
+<https://gist.github.com/suziewong/4378434/>
