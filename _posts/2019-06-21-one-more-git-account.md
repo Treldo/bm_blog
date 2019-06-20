@@ -12,10 +12,10 @@ git config --global --unset user.email
 
 ### 生成新站好的SSH keys
 
-**1. 用ssh-keygen命令生成一组新的id_rsa_new和id_rsa_new.pub**
+**1. 用 ssh-keygen 命令生成一组新的 id_rsa_new 和 id_rsa_new.pub**
 
 ``` shell
-ssh-keygen -t rsa -C "new email"
+ssh-keygen -t rsa -C \"new email\"
 ```
 
 在生成第一组 **id_rsa** 和 **id_rsa.pub_** 可以选用默认的文件名，在出现提示输入文件名的时候要输入一个不同的文件名，**比如：**这里填的是 `id_rsa_new`
@@ -26,7 +26,7 @@ Enter file in which to save the key (~/.ssh/id_rsa): id_rsa_new
 
 **注：**windows用户和mac用户的区别就是，mac中 `.ssh` 文件夹在根目录下，所以表示成 `~/.ssh/`，而windwos用户是 `C:\Users\Administrator\.ssh`。
 
-**2. 执行ssh-agent让ssh识别新的私钥**
+**2. 执行 ssh-agent 让 ssh 识别新的私钥**
 
 因为默认只读取 `id_rsa`，为了让 SSH 识别新的私钥，需将其添加到 SSH agent 中：
 
@@ -41,7 +41,7 @@ ssh-agent bash
 ssh-add ~/.ssh/id_rsa_new
 ```
 
-**3. 配置~/.ssh/config文件**
+**3. 配置 ~/.ssh/config 文件**
 
 ``` shell
 # 该文件用于配置私钥对应的服务器
@@ -57,15 +57,15 @@ Host git@code.xxxxxxx.com
     IdentityFile ~/.ssh/id_rsa_new
 ```
 
-**4. 添加新的SSH keys到新账号的SSH设置中**
+**4. 添加新的 SSH keys 到新账号的 SSH 设置中**
 
 **测试一下**
 
 ``` shell
 $ ssh -T git@github.com    # 此处是 Host 后面定义的别名
-Hi xxx! You've successfully authenticated, but GitHub does not provide shell access.
+Hi xxx! You\'ve successfully authenticated, but GitHub does not provide shell access.
 
-# 上面是github的成功返回语句，下面是gitlab的成功返回语句。
+# 上面是 github 的成功返回语句，下面是 gitlab 的成功返回语句。
 
 $ ssh -T git@xxxxxx.com
 Welcome to GitLab, xxx!  
@@ -73,7 +73,7 @@ Welcome to GitLab, xxx!
 
 链接：<https://www.jianshu.com/p/89cb26e5c3e8/>
 
-来源:：简书
+来源：简书
 
 ## 参考资料
 
