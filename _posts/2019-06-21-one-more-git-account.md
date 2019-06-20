@@ -3,7 +3,7 @@ layout: default
 title: 同一客户端下使用多个 git 账号
 ---
 
-## 同一客户端下使用多个 git 账号
+# 同一客户端下使用多个 git 账号
 
 ---
 
@@ -19,7 +19,7 @@ git config --global --unset user.email
 **1. 用 ssh-keygen 命令生成一组新的 id_rsa_new 和 id_rsa_new.pub**
 
 ``` shell
-ssh-keygen -t rsa -C “new email”
+ssh-keygen -t rsa -C "new email"
 ```
 
 在生成第一组 **id_rsa** 和 **id_rsa.pub_** 可以选用默认的文件名，在出现提示输入文件名的时候要输入一个不同的文件名，**比如：**这里填的是 `id_rsa_new`
@@ -67,7 +67,7 @@ Host git@code.xxxxxxx.com
 
 ``` shell
 $ ssh -T git@github.com    # 此处是 Host 后面定义的别名
-Hi xxx! You‘ve successfully authenticated, but GitHub does not provide shell access.
+Hi xxx! You’ve successfully authenticated, but GitHub does not provide shell access.
 
 # 上面是 github 的成功返回语句，下面是 gitlab 的成功返回语句。
 
