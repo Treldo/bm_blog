@@ -3,6 +3,8 @@ layout: default
 title: 同一客户端下使用多个 git 账号
 ---
 
+## 同一客户端下使用多个 git 账号
+
 ### 清除git的全局设置
 
 ``` shell
