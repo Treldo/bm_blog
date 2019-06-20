@@ -71,11 +71,11 @@ $ ssh -T git@xxxxxx.com
 Welcome to GitLab, xxx!  
 ```
 
-链接：https://www.jianshu.com/p/89cb26e5c3e8
+链接：[https://www.jianshu.com/p/89cb26e5c3e8]
 来源：简书
 
 ### 参考资料
 
-https://blog.csdn.net/onTheRoadToMine/article/details/79029331
+[https://blog.csdn.net/onTheRoadToMine/article/details/79029331]
 
-https://gist.github.com/suziewong/4378434
+[https://gist.github.com/suziewong/4378434]
