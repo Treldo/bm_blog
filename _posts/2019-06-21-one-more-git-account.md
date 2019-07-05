@@ -45,6 +45,11 @@ ssh-agent bash
 ssh-add ~/.ssh/id_rsa_new
 ```
 
+`ssh-add ~/.ssh/id_rsa_new` 只能将把指定的私钥添加到 `ssh-agent` 所管理的一个 session 当中。而 `ssh-agent` 是一个用于存储私钥的临时性的 session 服务，也就是说当你重启之后，ssh-agent 服务也就重置了，session 会话也就失效了。
+解决办法就是在添加 ssh 私钥的时候使用如下命令：`ssh-add -K privateKey`，即可一劳永逸将私钥添加进 Mac 本身的钥匙串中，即 Keychain。
+
+>参考博客：<http://www.icodeyou.com/2016/01/17/ssh-add-mac/>
+
 **3. 配置 ~/.ssh/config 文件**
 
 ``` shell
